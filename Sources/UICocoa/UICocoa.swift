@@ -1,7 +1,7 @@
 
 #if os(OSX) || os(watchOS) || os(tvOS)
 
-@_exported import AppKit
+@_exported import Cocoa
 @_exported import CoreData
 @_exported import Foundation
 
@@ -10,6 +10,7 @@ public typealias UIAccessibilityElement                            = NSAccessibi
 public typealias UIAlert                                           = NSAlert
 public typealias UIAppearance                                      = NSAppearance
 public typealias UIApplication                                     = NSApplication
+public typealias UIButton                                          = NSButton
 public typealias UIColor                                           = NSColor
 public typealias UIControl                                         = NSControl
 public typealias UIDatePicker                                      = NSDatePicker
