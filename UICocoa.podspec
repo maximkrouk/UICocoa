@@ -18,7 +18,7 @@ Keywords: UIKit Cocoa UICocoa AppKit UI NS
   s.homepage         = 'https://github.com/maximkrouk/UICocoa'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Maxim Krouk' => 'id.maximkrouk@gmail.com' }
-  s.source           = { :git => 'https://github.com/maximkrouk/UICocoa', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/maximkrouk/UICocoa.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/maximkrouk'
 
   s.ios.deployment_target = '8.0'
