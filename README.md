@@ -4,7 +4,7 @@ Just a bunch of typealeases for the AppKit in Cocoa.
 
 ## Usage
 
-Just `import UICocoa` instead of `import Cocoa` _(or AppKit)_
+Just `import UICocoa` instead of `import Cocoa` _(or AppKit)_.
 
 ### In OSX development:
 
@@ -19,6 +19,52 @@ Includes CoreData export, just like Cocoa, so `import UICocoa` already contains 
 ### In frameworks development
 
 Makes the development of cross-platform UI frameworks a little bit easier, reduces the amount of boilerplate code.
+
+#### Example
+
+Replace this
+
+```swift
+#if os(iOS)
+import UIKit
+
+extension UIView {
+  
+    func roundCorners(by value: CGFloat) {
+        layer.cornerRadius = value
+    }
+  
+}
+
+#elseif os(OSX)
+import AppKit // or Cocoa
+
+extension NSView {
+  
+    func roundCorners(by value: CGFloat) {
+        layer.cornerRadius = value
+    }
+  
+}
+
+#endif
+```
+
+with this
+
+```swift
+import UICocoa
+
+extension UIView {
+  
+    func roundCorners(by value: CGFloat) {
+        layer.cornerRadius = value
+    }
+  
+}
+```
+
+
 
 ## Installation
 
